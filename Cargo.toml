@@ -1,0 +1,34 @@
+[package]
+name = "evm-token-tools-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+serde_json = "1.0"
+async-std = "1.10.0"
+ethers = "2.0.7"
+ecdsa = "0.16.7"
+serde = "1.0.164"
+dotenv = "0.15.0"
+url = "2.4.0"
+rustc-hex = "2.1.0"
+eyre = "0.6.8"
+hex = "0.4.3" 
+ethers-contract-derive = "2.0.7"
+clap = {version = "4.5.4", features = ["derive"]}
+
+ 
+
+
+[[bin]]
+name = "erc20_balance"
+path = "src/bin/erc20_balance.rs"
+
+
+
+[[bin]]
+name = "erc20_approve"
+path = "src/bin/erc20_approve.rs"
