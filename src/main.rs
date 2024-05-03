@@ -9,7 +9,7 @@ use serde;
 use eyre::Result;
 
 
-use teller_protocol_dev_sdk::util::wallet_client::{WalletClient,WalletClientError};
+use evm_token_tools_rs::util::wallet_client::{WalletClient,WalletClientError};
 
 
 /*
